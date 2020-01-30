@@ -1,0 +1,11 @@
+applications:
+  - name: trace-explorer-demo
+    buildpacks:
+      - java_buildpack
+    memory: 1G
+    random-route: true
+    path: target/pcf-metrics-trace-explorer-demo-0.0.1-SNAPSHOT.jar
+    services:
+      - mysql
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'
