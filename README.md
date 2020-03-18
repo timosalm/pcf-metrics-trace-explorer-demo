@@ -15,13 +15,13 @@ cf push
 
 Call the REST API to create one or more items.
 ```
-curl --request GET \
+curl --request POST \
   --url https://trace-explorer-demo-impressive-impala.cfapps.io/items
 ```
 
 Call the REST API to fetch the available items.
 ```
-curl --request POST \
+curl --request GET \
   --url https://trace-explorer-demo-impressive-impala.cfapps.io/items
 ```
 
